@@ -1,0 +1,313 @@
+/* Main
+ * ========================================================================== */
+
+/* Button
+ * -------------------------------------------------------------------------- */
+
+.btn-primary {
+  border-color: #003973; /* hsb(210, 100%, 45%) */
+  background-color: #00468c; /* hsb(210, 100%, 55%) */
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.active:focus,
+.btn-primary.active:hover {
+  border-color: #00264d; /* hsb(208, 100%, 10%) */
+  background-color: #003366; /* hsb(208, 100%, 40%) */
+}
+
+
+/* Basic style
+ * -------------------------------------------------------------------------- */
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* Header */
+
+.docs-header {
+  border-color: #003973;
+  background-color: #00468c;
+  color: #fff;
+}
+
+.docs-header .navbar-brand {
+  color: #eee;
+}
+
+.docs-header .navbar-toggle {
+  border-color: #003973;
+  background-color: #00468c;
+}
+
+.docs-header .navbar-toggle:hover,
+.docs-header .navbar-toggle:focus {
+  border-color: #003366;
+  background-color: #003973;
+}
+
+.docs-header .navbar-collapse {
+  border-color: #003973;
+}
+
+.docs-header .navbar-text {
+  color: #ddd;
+}
+
+.docs-header .navbar-nav > li > a {
+  color: #eee;
+}
+
+
+/* Content */
+
+.img-container,
+.img-preview {
+  background-color: #f7f7f7;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.img-container {
+  min-height: 200px;
+  max-height: 554px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .img-container {
+    min-height: 554px;
+  }
+}
+
+.img-container > img {
+  max-width: 100%;
+}
+
+.docs-preview {
+  margin-right: -15px;
+  margin-bottom: 10px;
+}
+
+.img-preview {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.img-preview > img {
+  max-width: 100%;
+}
+
+.preview-lg {
+  width: 263px;
+  height: 148px;
+}
+
+.preview-md {
+  width: 139px;
+  height: 78px;
+}
+
+.preview-sm {
+  width: 69px;
+  height: 39px;
+}
+
+.preview-xs {
+  width: 35px;
+  height: 20px;
+  margin-right: 0;
+}
+
+.docs-data > .input-group {
+  margin-bottom: 10px;
+}
+
+.docs-data > .input-group > label {
+  min-width: 80px;
+}
+
+.docs-data > .input-group > span {
+  min-width: 50px;
+}
+
+.docs-buttons > .btn,
+.docs-buttons > .btn-group,
+.docs-buttons > .form-control {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.docs-toggles > .btn,
+.docs-toggles > .btn-group,
+.docs-toggles > .dropdown {
+  margin-bottom: 10px;
+}
+
+.docs-tooltip {
+  display: block;
+  margin: -6px -12px;
+  padding: 6px 12px;
+}
+
+.docs-tooltip > .icon {
+  margin: 0 -3px;
+  vertical-align: top;
+}
+
+.tooltip-inner {
+  white-space: normal;
+}
+
+.btn-upload .tooltip-inner {
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+  .btn-group-crop {
+    margin-right: -15px!important;
+  }
+
+  .btn-group-crop > .btn {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .btn-group-crop .docs-tooltip {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.docs-options .dropdown-menu {
+  width: 100%;
+}
+
+.docs-options .dropdown-menu > li {
+  padding: 3px 20px;
+}
+
+.docs-options .dropdown-menu > li:hover {
+  background-color: #f7f7f7;
+}
+
+.docs-options .dropdown-menu > li > label {
+  display: block;
+}
+
+.docs-cropped .modal-body {
+  text-align: center;
+}
+
+.docs-cropped .modal-body > img,
+.docs-cropped .modal-body > canvas {
+  max-width: 100%;
+}
+
+#crop_image_btn, #crop_image_btn:hover {
+	/*background-color:#000;
+	border:solid 1px #000;
+	border-radius:3px;
+	padding:5px;
+	color:#fff;
+	cursor:pointer;
+	background-image:none;
+	float: right;
+    margin-top: 60px;*/
+}
+
+#upload {
+	background-color:#000;
+	border:solid 1px #000;
+	border-radius:3px;
+	padding:5px;
+	color:#fff;
+	cursor:pointer;
+}
+
+.crop-img {
+	max-width:500px;
+}
+
+.processing {
+    box-shadow: none !important;
+    float: left;
+    margin-top: 1px;
+    vertical-align: -moz-middle-with-baseline;
+    display:inline-block;
+}
+
+.docs-actions {
+    display:none;
+}
+
+/* Dialog CSS Start */
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0px !important;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 0px !important;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 0px !important;
+}
+.ui-dialog {
+	padding:0px !important;
+}
+div[aria-describedby="crop_image_dialog"] {
+	box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+	z-index: 1000000;
+}
+div[aria-describedby="crop_image_dialog"] .ui-widget-header {
+	border-bottom: 1px solid #dfdfdf;
+	border-top:0px;
+	border-left:0px;
+	border-right: 0px;
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1);
+    background:none;
+    padding:15px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.ui-widget-header .ui-state-default {
+	background:none !important;
+	border:0px !important;
+}
+.ui-dialog .ui-dialog-titlebar-close span {
+	margin:-10px !important;
+}
+#crop_image_dialog {
+	display:none;
+	text-align:center;
+}
+.crop-dialog-image {
+	max-height:400px;
+	margin:20px;
+}
+#getCroppedCanvas{
+	background: #00a0d2 none repeat scroll 0 0;
+    border-color: #0073aa;
+    box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
+    color: #fff;
+    font-size:13px !important;
+    margin-right: 5px;
+}
+#skipCropping{
+	font-size:13px !important;
+	background:#fff !important;
+	font-family: Verdana,Arial,sans-serif !important;
+}
+/* Dialog CSS End */
